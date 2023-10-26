@@ -11,7 +11,7 @@ const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader
 const { htmlPluginEntryArray, entryFilesMap } = require('./config/entry.js')
 
 const config = {
-    // entry: './src/index.js',
+    // 多页面时，通过页面的Html名称进行访问
     entry: {
         ...entryFilesMap
     },
@@ -28,11 +28,7 @@ const config = {
         watchFiles:["src/**"]
     },
     plugins: [
-        // new HtmlWebpackPlugin({
-        //     template: 'index.html',
-        // }),
         ...htmlPluginEntryArray
-
         // Add your plugins here
         // Learn more about plugins from https://webpack.js.org/configuration/plugins/
     ],
