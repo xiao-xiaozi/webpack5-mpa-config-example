@@ -1,5 +1,4 @@
 import './petiteVue.scss'
-import "./rem.js"
 import imagePath from '@/assets/images/20230308213724.png'
 const petiteVue = require('petite-vue')
 
